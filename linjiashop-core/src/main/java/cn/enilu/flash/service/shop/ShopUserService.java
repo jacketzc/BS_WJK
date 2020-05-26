@@ -43,7 +43,8 @@ public class ShopUserService extends BaseService<ShopUser,Long,ShopUserRepositor
     }
 
     public boolean  sendSmsCode(String mobile) {
-        String smsCode = RandomUtil.getRandomNumber(4);
+//        String smsCode = RandomUtil.getRandomNumber(4);
+        String smsCode = "1234";
         String key =  mobile+"_smsCode";
         String timesKey = key+"_times";
         String oldSmsCode = (String) cacheDao.hget(CacheDao.HOUR,key);

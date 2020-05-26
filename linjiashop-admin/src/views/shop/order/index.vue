@@ -14,8 +14,8 @@
               <el-button  size="mini" :type="query.button.css.status.sended" @click.native="queryByState('sended')">已发货&nbsp;<el-tag type="info"  size="mini">{{query.button.tag.sended}}</el-tag></el-button>
               <el-button  size="mini" :type="query.button.css.status.finished" @click.native="queryByState('finished')">已完成&nbsp;<el-tag type="info"  size="mini">{{query.button.tag.finished}}</el-tag></el-button>
               <el-button  size="mini" :type="query.button.css.status.cancel" @click.native="queryByState('cancel')">已取消&nbsp;<el-tag type="info"  size="mini">{{query.button.tag.cancel}}</el-tag></el-button>
-              <el-button  size="mini" :type="query.button.css.status.refundIng" @click.native="queryByState('refundIng')">退款中&nbsp;<el-tag type="danger"  size="mini">{{query.button.tag.refundIng}}</el-tag></el-button>
-              <el-button  size="mini" :type="query.button.css.status.refund" @click.native="queryByState('refund')">已退款&nbsp;<el-tag type="info"  size="mini">{{query.button.tag.refund}}</el-tag></el-button>
+<!--              <el-button  size="mini" :type="query.button.css.status.refundIng" @click.native="queryByState('refundIng')">退款中&nbsp;<el-tag type="danger"  size="mini">{{query.button.tag.refundIng}}</el-tag></el-button>-->
+<!--              <el-button  size="mini" :type="query.button.css.status.refund" @click.native="queryByState('refund')">已退款&nbsp;<el-tag type="info"  size="mini">{{query.button.tag.refund}}</el-tag></el-button>-->
             </el-col>
           </el-row>
           <el-row>

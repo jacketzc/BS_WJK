@@ -29,15 +29,19 @@ public class PayController extends BaseController {
     @RequestMapping(value = "wx/prepare",method = RequestMethod.POST)
     public Object wxPrepare(@RequestParam("orderSn")String orderSn){
         ShopUser user = shopUserService.getCurrentUser();
-        if(StringUtil.isEmpty(user.getWechatOpenId())){
+//        屏蔽微信验证
+        /*if(StringUtil.isEmpty(user.getWechatOpenId())){
             return Rets.failure("非微信用户");
-        }
+        }*/
         Order order = orderService.getByOrderSn(orderSn);
-        WxPayMpOrderResult wxOrder = weixinPayService.prepare(user,order);
-        if(wxOrder!=null) {
-            return Rets.success(wxOrder);
-        }
-        return Rets.failure("数据准备异常");
+        orderService.paySuccess(order, OrderEnum.PayTypeEnum.UN_SEND.getKey());
+
+
+//        WxPayMpOrderResult wxOrder = weixinPayService.prepare(user,order);
+//        if(wxOrder!=null) {
+//            return Rets.success(wxOrder);
+//        }
+        return Rets.success("支付成功");
     }
 
     /**

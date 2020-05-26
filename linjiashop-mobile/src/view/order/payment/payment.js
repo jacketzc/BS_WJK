@@ -41,6 +41,8 @@ export default {
         },
         wxPrepare () {
             payApi.wxPrepare({orderSn:this.order.orderSn}).then(res => {
+                alert("支付成功！");
+                window.location.href="http://localhost:8080/#/order";
                 // 存储微信支付数据data
                 let data = res.data
                 //函数为分装过得  (就是调用微信支付)

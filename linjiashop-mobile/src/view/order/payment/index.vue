@@ -22,7 +22,7 @@
                     >
                     <van-radio slot="right-icon" name="wxpay"/>
                 </van-cell>
-                <van-cell clickable @click="radio = 'alipay'">
+               <!-- <van-cell clickable @click="radio = 'alipay'">
                     <img
 
                             style="width:120px;margin-right: 200px;"
@@ -31,10 +31,10 @@
                             src="@/assets/img/alipay.png"
                     >
                     <van-radio slot="right-icon" name="alipay"/>
-                </van-cell>
+                </van-cell>-->
             </van-cell-group>
         </van-radio-group>
-        <van-button class="footer" type="primary" size="large" @click="pay">立即支付</van-button>
+        <van-button class="footer" type="primary" size="large" @click="pay" >立即支付</van-button>
 
     </div>
 </template>

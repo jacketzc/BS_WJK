@@ -51,15 +51,15 @@
       </el-col>
     </el-row>
 
-    <el-row>
+    <!--<el-row>
       <el-col :span="24">
         <div class="chart section">
         <v-chart :options="lineData" ref="lineChart"/>
         </div>
       </el-col>
-    </el-row>
+    </el-row>-->
 
-    <el-row :gutter="20" >
+    <!--<el-row :gutter="20" >
       <el-col :span="12">
         <el-collapse   class="section">
           <el-collapse-item title="2019双11All in cloud低至一折" name="1">
@@ -89,9 +89,9 @@
       <el-col :span="12">
         <v-chart :options="barData" class="chart section" ref="barChart"/>
       </el-col>
-    </el-row>
+    </el-row>-->
 
-    <el-row :gutter="20" >
+    <!--<el-row :gutter="20" >
       <el-col :span="12">
         <v-chart :options="pieData" class="chart section" ref="pieChart"/>
       </el-col>
@@ -115,7 +115,7 @@
 
       </el-col>
 
-    </el-row>
+    </el-row>-->
   </div>
 </template>
 

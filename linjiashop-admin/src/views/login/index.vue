@@ -44,10 +44,10 @@
           <span>{{ $t('login.username') }} : admin</span>
           <span>{{ $t('login.password') }} : admin</span>
         </div>
-        <div class="tips">
+        <!--<div class="tips">
           <span style="margin-right:18px;">{{ $t('login.username') }} : developer</span>
           <span>{{ $t('login.password') }} : developer</span>
-        </div>
+        </div>-->
       </div>
     </el-form>
 

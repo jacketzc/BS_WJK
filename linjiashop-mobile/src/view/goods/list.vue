@@ -6,11 +6,11 @@
             <van-tab v-for="nav in navList" :title="nav.name" :name="nav.id"  >
             </van-tab>
         </van-tabs>
-        <van-swipe :autoplay="3000" style="height: 200px;">
+        <!--<van-swipe :autoplay="3000" style="height: 200px;">
             <van-swipe-item v-for="(image, index) in banners" :key="index" @click="clickSwipe">
                 <a :href="image.url"><img v-lazy="image.path" style="width:100%;"/></a>
             </van-swipe-item>
-        </van-swipe>
+        </van-swipe>-->
         <van-list
                 v-model="loading"
                 :finished="finished"

@@ -37,7 +37,7 @@ public class LoginController extends BaseController {
     @RequestMapping(value = "sendSmsCode",method = RequestMethod.POST)
     public Object sendSmsCode(@RequestParam String mobile){
         shopUserService.sendSmsCode(mobile);
-        return Rets.success();
+        return Rets.success(1234);
     }
     /**
      * 使用手机号和短信验证码登录或者注册
@@ -57,7 +57,8 @@ public class LoginController extends BaseController {
             if(validateRet) {
                 if(user==null){
                     //初始化6位密码
-                    String initPassword = RandomUtil.getRandomString(6);
+//                    String initPassword = RandomUtil.getRandomString(6);
+                    String initPassword = "123456";
                     user = shopUserService.register(mobile,initPassword);
                     result.put("initPassword",initPassword);
                 }

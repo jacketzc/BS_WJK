@@ -28,9 +28,9 @@
         <!--s-->
         <!--</van-cell-group>-->
 
-        <van-cell-group class="goods-cell-group">
+        <!--<van-cell-group class="goods-cell-group">
             <van-cell title="查看商品评论" is-link @click="sorry"/>
-        </van-cell-group>
+        </van-cell-group>-->
         <van-cell-group class="goods-cell-group">
             <p class="goods-detail" v-html="goods.detail"></p>
         </van-cell-group>
